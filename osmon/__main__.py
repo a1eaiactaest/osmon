@@ -26,7 +26,6 @@ def gpu():
     print(GPUtil.getAvailable(order='memory'))
 '''
 
-
 def ram():
     print('Checking RAM usage...')
     time.sleep(1)
@@ -52,8 +51,6 @@ def main():
         ram()
     elif args.all:
         run_all()
-
-
 
 if __name__ == '__main__':
     main()
