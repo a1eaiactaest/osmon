@@ -4,11 +4,14 @@ import psutil
 import time
 
 parser = argparse.ArgumentParser(description='Get some stats.')
-parser.add_argument('--cpu','-c', action='store_true')
+parser.add_argument('--cpu', '-c',                                      action='store_true')
 #parser.add_argument('--gpu','-g', action='store_true')
-parser.add_argument('--ram','-r', action='store_true')
-parser.add_argument('--net','-n', aciton='store_true')
-parser.add_argument('--all','-a', action='store_true')
+parser.add_argument('--ram', '-r',                                      action='store_true')
+parser.add_argument('--down','-d', help='Check download speed',         action='store_true')
+parser.add_argument('--up',  '-u', help='Check upload speed',           action='store_true')
+parser.add_argument('--ping','-p', help='Check download speed',         action='store_true')
+parser.add_argument('--net', '-n', help='Check all network parameters', aciton='store_true')
+parser.add_argument('--all', '-a', help='Check all possible parameters',action='store_true')
 args = parser.parse_args() 
 
 import sys
