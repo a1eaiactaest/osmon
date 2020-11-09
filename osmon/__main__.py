@@ -11,6 +11,7 @@ parser.add_argument('--net','-n', aciton='store_true')
 parser.add_argument('--all','-a', action='store_true')
 args = parser.parse_args() 
 
+import sys
 def loading(str,y):
     if y == None:
         y = 20
@@ -72,6 +73,8 @@ def main():
 #        gpu()
     elif args.ram:
         ram()
+    elif args.net:
+        net()
     elif args.all:
         run_all()
 
