@@ -61,7 +61,7 @@ Usage by Threads: 12
 12  -  [4.1%]
 VRAM:
 1  -  [592]MB Used
-CPU Usage: 
+GPU Usage: 
  [1]
 RAM usage: 27.2%
 Available: 72.8%

@@ -46,7 +46,7 @@ def gpu():
         print('VRAM:') 
         for i in range(len(memory)):
             print(i+1, ' - ', f'[{memory[i]}]MB Used') 
-        print('CPU Usage:','\n', percent)
+        print('GPU Usage:', f'{percent}%')
         
     except:
         print('Only Nvidia GPUs are compatible.')
