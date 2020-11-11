@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-import argparse
-import psutil
+import os
 import time
+import psutil
+import argparse
 
 parser = argparse.ArgumentParser(description='Get some stats.')
 parser.add_argument('--cpu', '-c', help='Check CPU parameters',         action='store_true')
@@ -74,13 +75,11 @@ def ping():
     print(st.results.ping, 'ms')
 
 def net():
-    down()
-    up()
-    ping()
-
+    os.system('speedtest-cli')
 
 def run_all():
     cpu()
+    gpu()
     ram()
     net()
 
