@@ -31,7 +31,7 @@ def cpu():
     loading('Checking CPU Usage', 10)
     print(f'CPU usage: {psutil.cpu_percent(interval=None)}%')
     percpu = psutil.cpu_percent(interval=None, percpu=True)
-    print(f'Thread by Thread: {psutil.cpu_count()}')
+    print(f'Usage by Threads: {psutil.cpu_count()}')
     for i in range(len(percpu)):
         print(i+1, ' - ', f'[{percpu[i]}%]')
     
