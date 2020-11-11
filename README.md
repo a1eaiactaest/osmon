@@ -4,6 +4,7 @@ Are You tired of having to one of these speedtest websites every time you want t
 We've got solution designed specially for You!
 <br>
 Introducing... osmon!
+<br>
 Minimal weight and easy in use system monitor.
 
 ### Installation
