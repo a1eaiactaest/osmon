@@ -1,0 +1,7 @@
+nvidia-smi
+python3
+python3-pip
+
+# Installation
+cd into project root directory
+cat requirements.system | xargs sudo apt install 
