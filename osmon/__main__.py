@@ -86,19 +86,19 @@ def run_all():
 def main():
     if args.cpu:
         cpu()
-    elif args.gpu:
+    if args.gpu:
         gpu()
-    elif args.ram:
+    if args.ram:
         ram()
-    elif args.down:
+    if args.down:
         down()
-    elif args.up:
+    if args.up:
         up()
-    elif args.ping:
+    if args.ping:
         ping()
-    elif args.net:
+    if args.net:
         net()
-    elif args.all:
+    if args.all:
         run_all()
 
 if __name__ == '__main__':
